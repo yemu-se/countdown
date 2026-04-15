@@ -105,7 +105,6 @@ function CountDownTimer() {
           <button onClick={handleSetCountDown}>Start Countdown</button>
         </form>
 
-
       ) : (
         <>
           {formatTime(remaingTime)}
