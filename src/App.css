@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cout-timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: green;
+    margin: 0rem 0.1rem;
+    padding: 0.25rem 0.5rem;
+    height: 100vh;
+    border-radius: 1rem;
+
+}
+
+.countDown-name {
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.countdown-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem 0rem 0.5rem;
+    max-width: 50rem;
+    width: 100%;
+}
+
+.countdown-form label {
+    font-size: 1.2rem;
+    margin: 0.1rem;
+    color: goldenrod;
+    font-weight: 550;
+}
+
+.countdown-form input {
+    font-size: 1.05rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border-style: none;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    outline: none;
+    height: 3.5rem;
+}
+
+.countdown-form button {
+    padding: 1rem 1rem;
+    border-style: none;
+    background-color: blue;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    max-width: 20rem;
+    width: 60%;
+    color: goldenrod;
+}
+
+.countdown-value {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+.control-buttons {
+    padding: 2rem;
+}
+
+.control-buttons button {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    color: gold;
+}
+
+.control-buttons .stop {
+    background-color: red !important;
+    font-size: 1.2rem;
+    color: black;
+}

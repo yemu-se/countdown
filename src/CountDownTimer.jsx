@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+
+
 function CountDownTimer() {
   const [eventName, setEventName] = useState("")
   const [eventDate, setEventDate] = useState("")
@@ -86,6 +88,7 @@ function CountDownTimer() {
       <h2 className="countDown-name">{CountDownStarted ? eventName : "CountDown Timer"}</h2>
       {!CountDownStarted ? (
         <form className='countdown-form'>
+
           <label htmlFor="title">Event Name</label>
           <input
             name='title'
@@ -94,14 +97,17 @@ function CountDownTimer() {
             value={eventName}
             onChange={(e) => setEventName(e.target.value)}
           />
+
           <label htmlFor="data-picker">Event Date</label>
           <input
             name='data-picker'
-            type="text"
+            type="Date"
+              placeholder='Enter Date'
             value={eventDate}
             onChange={(e) => setEventDate(e.target.value)}
             onClick={(e) => (e.target.type = "Date")}
           />
+
           <button onClick={handleSetCountDown}>Start Countdown</button>
         </form>
 
@@ -109,7 +115,7 @@ function CountDownTimer() {
         <>
           {formatTime(remaingTime)}
           <div className="control-buttons">
-            <button onClick={handleStopCountdown}>Stop</button>
+            <button className ='stop' onClick={handleStopCountdown}>Stop</button>
             <button onClick={handleResetCountdown}>Reset</button>
           </div>
         </>
